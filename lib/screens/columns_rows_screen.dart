@@ -21,9 +21,9 @@ class ColumnsRowsScreen extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    Card(title: 'Inicio', icon: Icons.home),
-                    Card(title: 'Perfil', icon: Icons.person),
-                    Card(title: 'Ajustes', icon: Icons.settings),
+                    CardWidget(title: 'Inicio', icon: Icons.home),
+                    CardWidget(title: 'Perfil', icon: Icons.person),
+                    CardWidget(title: 'Ajustes', icon: Icons.settings),
                   ],
                 ),
               ),
@@ -31,9 +31,9 @@ class ColumnsRowsScreen extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    Card(title: 'Notificaciones', icon: Icons.notifications),
-                    Card(title: 'Mensajes', icon: Icons.email),
-                    Card(title: 'Favoritos', icon: Icons.favorite),
+                    CardWidget(title: 'Notificaciones', icon: Icons.notifications),
+                    CardWidget(title: 'Mensajes', icon: Icons.email),
+                    CardWidget(title: 'Favoritos', icon: Icons.favorite),
                   ],
                 ),
               ),
@@ -41,9 +41,9 @@ class ColumnsRowsScreen extends StatelessWidget {
               Expanded(
                 child: Row(
                   children: [
-                    Card(title: 'Cámara', icon: Icons.photo_camera),
-                    Card(title: 'Música', icon: Icons.music_note),
-                    Card(title: 'Ubicación', icon: Icons.location_on),
+                    CardWidget(title: 'Cámara', icon: Icons.photo_camera),
+                    CardWidget(title: 'Música', icon: Icons.music_note),
+                    CardWidget(title: 'Ubicación', icon: Icons.location_on),
                   ],
                 ),
               ),
@@ -55,11 +55,11 @@ class ColumnsRowsScreen extends StatelessWidget {
   }
 }
 
-class Card extends StatelessWidget {
+class CardWidget extends StatelessWidget {
   final String title;
   final IconData icon;
 
-  const Card({
+  const CardWidget({
     super.key,
     required this.title,
     required this.icon,
